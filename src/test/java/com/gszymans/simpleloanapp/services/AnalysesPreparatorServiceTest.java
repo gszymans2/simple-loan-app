@@ -7,7 +7,6 @@ import com.gszymans.simpleloanapp.services.serviceErrors.BadInputParamsException
 import org.junit.Before;
 import org.junit.Test;
 import java.util.List;
-
 import static com.gszymans.simpleloanapp.AbstractHelperTest.CREDIT_NET_AMOUNT;
 import static com.gszymans.simpleloanapp.AbstractHelperTest.CREDIT_PERIOD_IN_DAYS;
 import static com.gszymans.simpleloanapp.AbstractHelperTest.generateLoanApplicationDTO;
@@ -51,5 +50,4 @@ public class AnalysesPreparatorServiceTest {
                 return "";
         }
     }
-
 }

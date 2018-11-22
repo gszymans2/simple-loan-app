@@ -9,7 +9,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
 import java.util.Optional;
 import static com.gszymans.simpleloanapp.AbstractHelperTest.RATE;
 import static com.gszymans.simpleloanapp.AbstractHelperTest.generateLoan;

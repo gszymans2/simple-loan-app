@@ -33,7 +33,6 @@ public class LoanControllerTest {
     @InjectMocks
     LoanController loanController;
 
-    //@Autowired
     MockMvc mockMvc;
 
     LoanApplicationDTO loanApplicationDTO;
@@ -109,7 +108,6 @@ public class LoanControllerTest {
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
-
 
     @Test
     public void extendLoanNoResource_Test() throws Exception{

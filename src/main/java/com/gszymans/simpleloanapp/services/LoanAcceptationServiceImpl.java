@@ -6,7 +6,6 @@ import com.gszymans.simpleloanapp.domain.LoanParameterType;
 import com.gszymans.simpleloanapp.repositories.LoanParameterRepository;
 import com.gszymans.simpleloanapp.repositories.LoanRepository;
 import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 
 @Service

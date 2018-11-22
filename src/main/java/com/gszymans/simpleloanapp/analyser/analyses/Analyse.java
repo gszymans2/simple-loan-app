@@ -1,6 +1,5 @@
 package com.gszymans.simpleloanapp.analyser.analyses;
 
-
 import com.gszymans.simpleloanapp.analyser.util.AnalysePerformingException;
 import com.gszymans.simpleloanapp.analyser.util.AnalysedInputVariable;
 import com.gszymans.simpleloanapp.analyser.util.AnalysedInputVariableType;

@@ -5,8 +5,6 @@ import com.gszymans.simpleloanapp.analyser.CriteriaAnalyser;
 import com.gszymans.simpleloanapp.api.v1.mapper.LoanMapper;
 import com.gszymans.simpleloanapp.api.v1.model.LoanApplicationDTO;
 import com.gszymans.simpleloanapp.api.v1.model.LoanDTO;
-import com.gszymans.simpleloanapp.bootstrap.Bootstrap;
-import com.gszymans.simpleloanapp.domain.AnalysedCriteriaParamName;
 import com.gszymans.simpleloanapp.domain.Loan;
 import com.gszymans.simpleloanapp.domain.LoanParameter;
 import com.gszymans.simpleloanapp.domain.LoanParameterType;
@@ -50,7 +48,6 @@ public class LoanServiceImplIntegrationTest {
 
     LoanService loanService;
 
-    //1L first element in our repository
     public static final Long testedEntityId = 1L;
 
     @Before

@@ -1,9 +1,5 @@
 package com.gszymans.simpleloanapp.services;
 
-import com.gszymans.simpleloanapp.analyser.AnalyseMode;
-import com.gszymans.simpleloanapp.analyser.util.AnalysedInputVariable;
-import com.gszymans.simpleloanapp.api.v1.model.LoanApplicationDTO;
-import com.gszymans.simpleloanapp.api.v1.model.LoanDTO;
 import com.gszymans.simpleloanapp.domain.Loan;
 import com.gszymans.simpleloanapp.domain.LoanParameter;
 import com.gszymans.simpleloanapp.domain.LoanParameterType;
@@ -14,17 +10,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-
 import static com.gszymans.simpleloanapp.AbstractHelperTest.EXTENSION_IN_DAYS;
-import static com.gszymans.simpleloanapp.AbstractHelperTest.GENERATED_LOAN_ID;
 import static com.gszymans.simpleloanapp.AbstractHelperTest.generateLoan;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyObject;
 import static org.mockito.Mockito.when;
 
 public class LoanExtensionServiceImplTest {

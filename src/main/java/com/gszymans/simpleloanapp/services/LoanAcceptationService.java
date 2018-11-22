@@ -4,5 +4,5 @@ import com.gszymans.simpleloanapp.domain.Loan;
 
 public interface LoanAcceptationService {
 
-    public Loan acceptLoan(Loan loan);
+    Loan acceptLoan(Loan loan);
 }

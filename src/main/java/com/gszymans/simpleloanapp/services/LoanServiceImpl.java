@@ -12,8 +12,6 @@ import com.gszymans.simpleloanapp.repositories.LoanRepository;
 import com.gszymans.simpleloanapp.services.serviceErrors.LoanRejectedException;
 import com.gszymans.simpleloanapp.services.serviceErrors.NoSuchResourceException;
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDate;
 import java.util.List;
 
 
@@ -31,8 +29,6 @@ public class LoanServiceImpl implements LoanService {
     private final CriteriaAnalyser criteriaAnalyser;
 
     private final LoanAcceptationService loanAcceptationService;
-
-    //private final AnalysesPreparatorServiceImpl analysesPreparatorServiceImpl;
 
     public LoanServiceImpl(LoanRepository loanRepository, LoanMapper loanMapper, AnalysesPreparatorService analysesPreparatorService, LoanExtensionService loanExtensionService, CriteriaAnalyser criteriaAnalyser, LoanAcceptationService loanAcceptationService) {
         this.loanRepository = loanRepository;

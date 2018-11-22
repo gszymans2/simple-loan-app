@@ -5,7 +5,6 @@ import com.gszymans.simpleloanapp.analyser.util.AnalysedInputVariable;
 import com.gszymans.simpleloanapp.analyser.util.AnalysedInputVariableType;
 import com.gszymans.simpleloanapp.domain.AnalysedCriteriaParamName;
 import com.gszymans.simpleloanapp.domain.AnalysedCryteriaParam;
-
 import java.util.Map;
 
 public class AmountRangeAnalyse extends Analyse{
