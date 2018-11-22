@@ -1,5 +1,6 @@
 package com.gszymans.simpleloanapp.controllers;
 
+import com.gszymans.simpleloanapp.analyser.util.AnalyseNotSupportedException;
 import com.gszymans.simpleloanapp.analyser.util.AnalysePerformingException;
 import com.gszymans.simpleloanapp.services.serviceErrors.BadInputParamsException;
 import com.gszymans.simpleloanapp.services.serviceErrors.LoanRejectedException;
@@ -43,11 +44,13 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 
     }
 
-    @ExceptionHandler({Exception.class})
-    public ResponseEntity<Object> unspecifiedException(Exception exception, WebRequest request){
+    @ExceptionHandler({AnalyseNotSupportedException.class})
+    public ResponseEntity<Object> analyseNotSupportedException(Exception exception, WebRequest request){
 
-        return new ResponseEntity<Object>("Unspecified Exception", new HttpHeaders(), HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<Object>("Analyse not supported", new HttpHeaders(), HttpStatus.BAD_REQUEST);
 
     }
+
+
 
 }

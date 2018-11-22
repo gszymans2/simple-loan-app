@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface AnalysesPreparatorService {
 
-    public List<AnalysedInputVariable> createAnalyseInputData(LoanApplicationDTO loanApplicationDTO);
+    List<AnalysedInputVariable> createAnalyseInputData(LoanApplicationDTO loanApplicationDTO);
 
 }

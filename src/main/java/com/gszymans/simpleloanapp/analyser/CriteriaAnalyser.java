@@ -32,9 +32,8 @@ public class CriteriaAnalyser {
                 inputParamMap = completeInputParameters(inputParamMap);
                 return performFullAnalyse(constantParamMap,inputParamMap);
             default:
-                break;
+               throw new AnalyseNotSupportedException("Analyse mode not supported");
         }
-        return true;
     }
 
     private boolean performFullAnalyse(Map<AnalysedCriteriaParamName, AnalysedCryteriaParam> constantParamMap, Map<AnalysedInputVariableType, AnalysedInputVariable> inputParamMap) throws AnalysePerformingException {

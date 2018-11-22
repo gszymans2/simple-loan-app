@@ -70,24 +70,4 @@ public class LoanServiceImpl implements LoanService {
         return loanMapper.loanToLoanDTO(loan);
     }
 
-    private LoanDTO generateLoanDTO(){
-        LoanDTO loanDTO = new LoanDTO();
-        loanDTO.setId(1L);
-        loanDTO.setLoanDueDate(LocalDate.now());
-        loanDTO.setLoanExtended(true);
-        loanDTO.setLoanPeriodInDays(123);
-        loanDTO.setLoanTotalGrossAmount(100.0);
-        loanDTO.setLoanTotalNetAmount(80.0);
-        return loanDTO;
-    }
-
-    private Loan generateLoan(){
-        Loan loanDTO = new Loan();
-        loanDTO.setLoanDueDate(LocalDate.now());
-        loanDTO.setLoanExtended(true);
-        loanDTO.setLoanPeriodInDays(123);
-        loanDTO.setLoanTotalGrossAmount(100.0);
-        loanDTO.setLoanTotalNetAmount(80.0);
-        return loanDTO;
-    }
 }

@@ -15,7 +15,6 @@ public class AnalysesPreparatorServiceImpl implements AnalysesPreparatorService{
     @Override
     public List<AnalysedInputVariable> createAnalyseInputData(LoanApplicationDTO loanApplicationDTO) {
         List<AnalysedInputVariable> analysedInputVariables = new ArrayList<>();
-
         if( loanApplicationDTO.getLoanTotalNetAmount() == null || loanApplicationDTO.getLoanPeriodInDays()==null )
             throw new BadInputParamsException("Wrong Params");
         analysedInputVariables.add(new AnalysedInputVariable(AnalysedInputVariableType.CREDIT_AMOUNT, loanApplicationDTO.getLoanTotalNetAmount().toString()));

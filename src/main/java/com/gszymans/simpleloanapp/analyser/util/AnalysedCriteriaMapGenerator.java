@@ -9,15 +9,11 @@ import java.util.Map;
 
 public class AnalysedCriteriaMapGenerator {
 
-
-
-
     private AnalyserCriteriaRepository analyserCriteriaRepository;
 
     public AnalysedCriteriaMapGenerator(AnalyserCriteriaRepository analyserCriteriaRepository) {
         this.analyserCriteriaRepository = analyserCriteriaRepository;
     }
-
 
     public Map<AnalysedCriteriaParamName, AnalysedCryteriaParam> getParamMap(){
         Map<AnalysedCriteriaParamName, AnalysedCryteriaParam> paramMap = new HashMap<>();
